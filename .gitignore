@@ -1,4 +1,4 @@
 #ignore
 config.txt
 conf.txt
-config/"*.log" 
+"*.log" 
