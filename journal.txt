@@ -1,4 +1,4 @@
 - git is stupid and so is GitHub desktop
 - MAYBE I SHOULD LEARN HOW TO USE IT PROPERLY INSTEAD OF COMPLAINING
-
-Branches and pull requests are important for keeping constancy in code functionality and quality. Branches allow for more experimentation within a workspace, while pull requests allow users outside or inside of the repository contribute in meaningful ways, no matter what the task is (fixing bugs, adding new features, etc) Issues help too, but for problem solvers, pull requests are the way to go.
+- Branches and pull requests are important for keeping constancy in code functionality and quality. Branches allow for more experimentation within a workspace, while pull requests allow users outside or inside of the repository contribute in meaningful ways, no matter what the task is (fixing bugs, adding new features, etc) Issues help too, but for problem solvers, pull requests are the way to go.
+- Merging branches allows for more control over the code that gets to be in the master branch, or just overall allows for more control over what changes and what doesn't. One has to know how to avoid conflicts, and how to fix them if they exist. 
