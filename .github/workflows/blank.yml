@@ -1,0 +1,30 @@
+name: Create Random Text File
+
+on:
+  workflow_dispatch:
+  push:
+
+jobs:
+  create-file:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Generate Random File and Commit
+        run: |
+          RANDOM_INT=$((RANDOM % 100000 + 1))
+          FILENAME="test${RANDOM_INT}.txt"
+          
+          echo "This is an automated test file created at $(date)" > "$FILENAME"
+          
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          git add "$FILENAME"
+          git commit -m "Add automated file: $FILENAME"
+          git push
